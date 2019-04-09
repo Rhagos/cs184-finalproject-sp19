@@ -1,19 +1,11 @@
-Title, Summary and Team Members
-Provide us a descriptive title, 2-3 sentences that summarize your project, and list your three team members.
 Title: Gun Range Simulation
 Summary: This VR application brings players to a simulated gun range where they can use a variety of firearms with several different attachments. Players can customize the range environment, targets, and other parameters to suit their preferences and needs.
 Team members: Benjamin Wu, Daniel Wu, Charles Hager
 Problem Description
-Here you should provide the context for your idea. Describe the problem that you are trying to solve, why it is important, where it is challenging. Give us a general idea on how you are going to solve it.
+
 Firearm training is inaccessible to some people due to factors such as location, cost, hassle, and safety, all of which is compounded for novice shooters. A virtual reality gun range is a great first step for those who want to learn to handle firearms, as it is a risk-free and beginner-friendly environment to practice.
 Goals and Deliverables
-This is the most important part of your proposal. You should carefully think through what you are trying to accomplish, what results you are going for, and why you think you can accomplish those goals. For example:
-Since this is a graphics class you will likely define the kind of images you will create (e.g. including a photo of a new lighting effect you will simulate).
-If you are working on an interactive system, describe what demo you will create.
-Define how you will measure the quality / performance of your system (e.g. graphs showing speedup, or quantifying accuracy). It may not be possible to define precise target metrics at this time, but we encourage you to try.
-What questions do you plan to answer with your analysis?
-You should break this section into two parts: (1) what you plan to deliver, and (2) what you hope to deliver. In (1), describe what you believe you must accomplish to have a successful project and achieve the grade you expect (i.e. your baseline plan -- planning for some unexpected problems would make sense). In (2), describe what you hope to achieve if things go well and you get ahead of schedule (your aspirational plan).
-1: Plan to deliver
+
 Interactive demo: Player starts at a gun range with firearms on a table in front of them, and targets at various distances behind the table. The player can pick up, interact with the operations of, and fire the guns.
 Minimum requirements:
 Optical attachments for certain guns
@@ -46,7 +38,6 @@ Custom textures for surfaces
 Modular attachment system
 Wider variety of firearms: revolvers, fully automatic weapons, military weapons
 Schedule
-In this section you should organize and plan the tasks and subtasks that your team will execute. Since presentations are ~4 weeks from the due-date of the proposal, you should include a set of tasks for every week.
 Week 1:
 Graphics:
 All props and models should be found/modeled and added to a Unity scene
@@ -70,7 +61,6 @@ Week 4:
 Mainly a buffer week for unfinished miscellaneous tasks
 Work on “hope to deliver” goals
 Resources
-List what resources, e.g. books, papers and/or online resources that are references for your project. List the computing platform, hardware and software resources that you will use for your project. You have a wide latitude here to use what you have access to, but be aware that you will have to support and trouble-shoot on your platform yourselves. If you are starting from an existing piece of code or system, describe and provide a pointer to it here.
 Basic info
 Platform: Windows 10
 Hardware
