@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Daniel Wu  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body bgcolor="#efefef">
+<br />
+<h1 align="middle">Final Project Proposal</h1>
+Title: Gun Range Simulation
+Summary: This VR application brings players to a simulated gun range where they can use a variety of firearms with several different attachments. Players can customize the range environment, targets, and other parameters to suit their preferences and needs.
+Team members: Benjamin Wu, Daniel Wu, Charles Hager
+Problem Description
+
+Firearm training is inaccessible to some people due to factors such as location, cost, hassle, and safety, all of which is compounded for novice shooters. A virtual reality gun range is a great first step for those who want to learn to handle firearms, as it is a risk-free and beginner-friendly environment to practice.
+Goals and Deliverables
+
+Interactive demo: Player starts at a gun range with firearms on a table in front of them, and targets at various distances behind the table. The player can pick up, interact with the operations of, and fire the guns.
+Minimum requirements:
+Optical attachments for certain guns
+Magnifying sight for hunting rifle
+Holographic sight for semi-automatic rifle
+Basic gun range environment map
+Flat terrain
+Targets
+Table
+Skybox and map borders
+Basic gun sounds
+Basic bullet raycasting
+Basic gun functionality and animations:
+Physics - gravity, collisions
+Releasing and reloading magazines
+Pulling the slide back and cycling a bullet
+One of each major type of consumer firearm:
+1 semi-automatic pistol
+1 pump-action hunting shotgun
+1 bolt-action hunting rifle
+1 semi-automatic rifle
+Pure graphics components:
+Optical sights
+Holographic sight: mimicking the “infinity effect” transmission hologram
+Magnifying sight: second camera rendering with higher FoV, or custom magnifying shader
+Inverse kinematic arms for realistic arm movement
+2: Hope to deliver
+Custom shaders for Unity
+Custom textures for surfaces
+Modular attachment system
+Wider variety of firearms: revolvers, fully automatic weapons, military weapons
+Schedule
+Week 1:
+Graphics:
+All props and models should be found/modeled and added to a Unity scene
+Inverse kinematic system on a character rig should be started
+Interaction:
+Player should be able to move around the map and pick up and drop the guns
+Week 2:
+Graphics:
+Inverse kinematics should be finished, and player model should have arms
+Gun animations should be started
+Holographic and magnifying optical sights should be started
+Interaction:
+Gun mechanics should be finished
+Week 3:
+Graphics:
+Gun animations should be finished
+Sights should be finished and added to weapon models
+Interaction:
+Fluff map props and alternate environments should be added, along with a system to switch environments
+Week 4:
+Mainly a buffer week for unfinished miscellaneous tasks
+Work on “hope to deliver” goals
+Resources
+Basic info
+Platform: Windows 10
+Hardware
+Oculus Rift with Touch controllers and sensors
+VR-ready laptop
+Software
+Virtual Reality Toolkit (VRTK)
+Unity libraries
+VR@B starter code for OVR avatar, basic VR functionality (controllers and head tracking, no lateral movement)
+Inverse kinematics in VR
+https://unity3d.com/learn/tutorials/topics/vr/creating-body-presence-final-ik
+Holographic sight
+http://ultimak.com/UnderstandingE-sights.htm
+Shaders
+https://docs.unity3d.com/Manual/SL-Reference.html
+Animations
+https://docs.unity3d.com/Manual/AnimationSection.html
+
+</body>
+</html>
