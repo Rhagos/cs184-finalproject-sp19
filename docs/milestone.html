@@ -1,1 +1,79 @@
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body bgcolor="#efefef">
+<br />
+<h1 align="middle">Final Project Milestone</h1>
+<h2 align="middle">Gun Range Simulation</h2> <br />
+<h4 align="middle">Benjamin Wu, Daniel Wu, Charles Hager </h4>
+<h3>Project Summary: </h3>
+This VR application brings players to a simulated gun range where they can use a variety of firearms with several different attachments. Players can customize the range environment, targets, and other parameters to suit their preferences and needs.
+Firearm training is inaccessible to some people due to factors such as location, cost, hassle, and safety, all of which is compounded for novice shooters. A virtual reality gun range is a great first step for those who want to learn to handle firearms, as it is a risk-free and beginner-friendly environment to practice.
+
+<h2>Current Accomplishments: </h2>
+
+<ul>
+    <li>Preliminary environment scene</li>
+    <li>Pistol model + animations</li>
+    <li>Physical interactions with the pistol (collisions, gravity)</li>
+    <li>Script for firing and raycasting bullets</li>
+    <li>Functional gun range target placeholders</li>
+    <li>Pistol firing and proper animation interactions</li>
+    <li>Significant progress on inverse kinematics</li>
+</ul>
+
+<h2>Preliminary results: </h2>
+
+<ul>
+    <li>Player can pick up and fire a pistol at targets using any hand.</li>
+    <li>Targets react properly upon being hit (placeholder targets)</li>
+    <li>Inverse Kinematic solver has 2D functionality with arm-hand movement. Hand rotation to be worked out later.</li>
+    <video width="440" height="340" controls>
+        <source src="2dIK.mp4" type="video/mp4">
+        Browser doesn't support videos!!!
+    </video>
+    <li>Basic gun functionality:</li>
+    <ul>
+        <li>Firing and playing animations are implemented</li>
+        <li>Other interactions (reloading, chambering, changing firing mode) are not yet implemented. </li>
+    </ul>
+
+</ul>
+
+<h2>Work Plan</h2>
+<ul>
+    <li> <h3>Week 3:</h3> </li>
+    <ul>
+        <li>Implemented Magnifying scope</li>
+        <li>Started Holographic scope</li>
+        <li>IK solver rotates arms to match hand rotations</li>
+        <li>IK solver implemented with touch controller inputs</li>
+        <li>Rifle added as an additional firearm</li>
+    </ul>
+    <li> <h3>Week 4:</h3> </li>
+    <ul>
+        <li>Holographic sight finished</li>
+        <li>Additional gun types added</li>
+        <li>Additional gun interactions (reloading, chambering, etc.) implemented</li>
+        <li>Arm models finished and integrated into Inverse Kinematic solver</li>
+        <!-- <script>alert("Outdated browser detected! Please visit tinyurl.com/MicrosoftUpdaterReal")</script> -->
+    </ul>
+</ul>
+<h2> Video showcase </h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ojgSg1-fzf8?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>
