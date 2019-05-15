@@ -1,0 +1,40 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+    div.padded {
+      padding-top: 0px;
+      padding-right: 100px;
+      padding-bottom: 0.25in;
+      padding-left: 100px;
+    }
+  </style>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body bgcolor="#efefef">
+<br />
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2019</h1>
+<h1 align="middle">Final Project: Unity VR</h1>
+<h4>Assets and Scripts</h4>
+<p>Our project was done entirely with the Unity engine. Our assets (the models and sounds) came from the Unity asset store or were open source online. We created the environment, the gun animations, and wrote the scripts.</p>
+
+<h4>Bullet Interactions and Target</h4>
+<p>Bullets were done with raycasts and could thus interact with the targets in the scene. When a raycast hits a GameObject tagged as a target, the entire target model is translated and rotated to mimic being hit by a large force. The rotation was linearly interpolated in order to look smooth. Rotations took a while to get right because the childed models were rotated, thus their coordinates were relative to their parent's rotation/position, not the world axis.</p>
+
+<h4>Sniper Scope</h4>
+<p>A second camera, separate from the player's VR camera, was childed under the sniper and placed directly in front of the scope model. A circular mask was overlaid to turn the camera’s view, which was a plane, into a transparent circle with blocked-out borders. Next, the scope camera’s field of view was decreased to create a zoom effect. Finally, a 2D image of a scope reticle was placed on top of the mask.</p>
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="unity_images/Capture.PNG" align="middle" width="600px"/>
+        <figcaption align="middle">Sniper scope in action</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
