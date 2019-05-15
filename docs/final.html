@@ -2,14 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<style>  
-    div.padded {  
-      padding-top: 0px;  
-      padding-right: 100px;  
-      padding-bottom: 0.25in;  
-      padding-left: 100px;  
-    }  
-  </style> 
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
@@ -25,24 +31,52 @@ A virtual reality gun range is a great first step for those who want to learn to
 Furthermore, virtual reality is a growing field, and projects like this can be extended for use in video games or more complex simulations <br />
 
 
-<h3> Abstract </h3>
-The Virtual Reality Gun Range is a virtual reality project that puts the user into a virtual reality gun range, where the user can then practice aiming and firing with a variety of firearms. <br />
-In addition to the traditional virtual reality experience, an inverse kinematics arm position solver was implemented in order to enhance the virtual reality experience and provide more immersion. <br />
-The virtual reality itself was implemented with Unity, and features fully functional firearms that the user can interact with using the Oculus controllers, where interaction is firing, aiming, picking up, dropping, and reloading. <br />
-Arm position is then calculated with inverse kinematics given the head and two hands, which is then portrayed in VR. <br />
+<h3> Abstract: </h3>
+<p>
+The Virtual Reality Gun Range is a virtual reality project that puts the user into a virtual reality gun range, where the user can then practice aiming and firing with a variety of firearms.
+In addition to the traditional virtual reality experience, an inverse kinematics arm position solver was implemented in order to enhance the virtual reality experience and provide more immersion. 
+The virtual reality itself was implemented with Unity, and features fully functional firearms that the user can interact with using the Oculus controllers, where interaction is firing, aiming, picking up, dropping, and reloading.
+Arm position is then calculated with inverse kinematics given the head and two hands, which is then portrayed in VR.
+</p>
 
 
-<h3> Technical Aspects </h3>
-The Virtual Reality was implemented with Unity, and is described <a href="./unity.html"> here </a>
+<h3> Technical Aspects: </h3>
+The Virtual Reality was implemented with Unity, and is described <a href="./unity.html"> here </a> <br />
 The Inverse Kinematics was implemented by interpolating the arms from 3 points, and the details can be found <a href="./ik.html"> here </a>
+<p>
+Some main issues encountered were the conversion of in-game coordinates to actual movement coordinates, 
+and the offset between the hands and arms, since the sensors model the palms, resulting in some odd clipping between the built in hands and the arms that we constructed. 
+<br />
+Overall, we learned that it is best to start early and that some things don't need to be perfect, and we also figured out how to implement solvers into a VR space.
+</p>
 
 
 
-<h2> Results </h2>
-Final Project presentation <a href=""> here </a>
-Final Project Demonstration video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ojgSg1-fzf8?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2> Results: </h2>
+Final Project presentation <a href="https://docs.google.com/presentation/d/1PLQ9qmmPlRUxihgNiiV6ONoCyUIMRmWWlxSByyPiX1Q/edit?usp=sharing"> here </a> <br />
+Final Project Demonstration video: <br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XUDMIhkfuxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+<h3> Wrapup: </h3>
+Resources used: <ul>
+    <li>
+        <a href="https://unity3d.com/learn/tutorials/topics/vr/creating-body-presence-final-ik">Inverse kinematics in VR</a> <br />
+    </li>
+
+    <li>
+        <a href="https://docs.unity3d.com/Manual/AnimationSection.html">Animations</a> <br />
+    </li>
+</ul>
+<br />
+Contributions: <br />
+Benjamin Wu did most of the VR work in Unity, Charles Hager developed the IK formula, and Daniel Wu helped along with the production of the video, presentation, and website.
+
+
+<br />
+<br />
+<br />
+<a href="./index.html">Back to the index</a>
 
 </body>
 </html>
